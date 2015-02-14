@@ -106,7 +106,7 @@ void showPressure(int32_t pressure,int count) {
   display.setTextColor(WHITE);
   display.setTextSize(textSize);
   String sPressure="";
-  if (count%10 <5) {
+  if (abs(count)%10 <5) {
     dtostrf(pressure/100.0,1,2,buf);
     sPressure+=buf;
     sPressure+=" hPa";
