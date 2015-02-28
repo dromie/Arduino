@@ -37,7 +37,7 @@ def showPressure(value,iteration):
  if (abs(iteration % 10) < 5):
    text="{0:0.2f} hPa".format(value/100.0) 
  else:
-   text="{0:0.2f} Hgmm".format(value//1333.22)
+   text="{0:0.2f} Hgmm".format(value/1333.22)
  w,h=draw.textsize(text,font=fonts[0])
  draw.text(((width-w)/2,pressureY),text,font=fonts[0],fill=255)
 
